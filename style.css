@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f3f0;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #687b00;
+  color: white;
+  width: 80px;
+  height: 100vh;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+}
+
+.sidebar h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2em;
+  margin-bottom: 40px;
+}
+
+.sidebar nav a {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin: 20px 0;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.sidebar nav a:hover {
+  color: #e3fa71;
+}
+
+main {
+  margin-left: 80px;
+  width: calc(100% - 80px);
+}
+
+/* Hero Section */
+.hero {
+  background: #111;
+  color: #d5ff00;
+  padding: 80px 40px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.hero h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+/* Polaroid Gallery */
+.polaroids {
+  padding: 60px 30px;
+  background: #fff;
+}
+
+.polaroids h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 10px;
+  border: 2px solid #4b5320;
+  width: 220px;
+  text-align: center;
+  box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #4b5320;
+}
+
+.card span {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.rotate-left {
+  transform: rotate(-5deg);
+}
+.rotate-right {
+  transform: rotate(5deg);
+}
+
+.card:hover {
+  transform: scale(1.05) rotate(0deg);
+}
+
+/* Info Sections */
+.section-info {
+  padding: 50px 40px;
+}
+
+.section-info h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section-info ul li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+article {
+  background: #e8f0d9;
+  border-left: 6px solid #6b8e23;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}

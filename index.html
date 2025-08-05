@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vôlei Estudantil</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Fundo da seção início com imagem e overlay escuro para texto legível */
+    #inicio {
+      background: 
+        linear-gradient(rgba(19, 33, 0, 0.6), rgba(27, 51, 0, 0.6)), 
+        url('familia.pnj.pnj') no-repeat center center/cover;
+      color: rgb(0, 0, 0);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 40px;
+    }
+
+    /* Estilizando o título do sidebar para colocar a logo no lugar do emoji */
+    aside.sidebar h1 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    aside.sidebar h1 img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+<body>
+  <aside class="sidebar">
+    <h1>
+      <!-- Troque aqui 'logo.png' pela URL ou caminho da sua logo -->
+      <img src="logo.png" alt="Logo Vôlei Brasília" />
+      VÔLEI BSB
+    </h1>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#equipe">Equipe</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#noticias">Notícias</a>
+      <a href="#cadastro">Cadastro</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </aside>
+
+  <main>
+    <section id="inicio" class="hero">
+      <h2>Jogo é atitude</h2>
+      <p>Força, foco e espírito de equipe. O time de vôlei escolar mais casca do ano.</p>
+    </section>
+
+    <section id="galeria" class="polaroids">
+      <h2>Galeria Urbana</h2>
+      <div class="gallery">
+        <div class="card rotate-left">
+          <img src="rival.png" alt="Partida" />
+          <span>Jogo contra rival</span>
+        </div>
+        <div class="card rotate-right">
+          <img src="treino.png" alt="Treino" />
+          <span>Treino intenso</span>
+        </div>
+        <div class="card rotate-left">
+          <img src="vitoria.png" alt="Comemoração" />
+          <span>Vitória no regional</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="section-info">
+      <h2>Time Base</h2>
+      <ul>
+        <li><strong>Capitã:</strong> Ana Souza</li>
+        <li><strong>Libero:</strong> João Mendes</li>
+        <li><strong>Treinador:</strong> Prof. Ricardo Lima</li>
+        <li><strong>Atacantes:</strong> Laura e Pedro</li>
+      </ul>
+    </section>
+
+    <section id="noticias" class="section-info">
+      <h2>Últimas Notícias</h2>
+      <article>
+        <h3>🏆 Regional: Vitória Histórica</h3>
+        <p>Nosso time fez bonito e levou o título com muito suor e raça. Valeu, guerreiros!</p>
+      </article>
+      <article>
+        <h3>🚨 Novos uniformes a caminho</h3>
+        <p>Os novos kits 2025 foram aprovados e chegam no próximo mês.</p>
+      </article>
+    </section>
+
+    <section id="cadastro" class="section-info">
+      <h2>Faça sua matricula agora!!</h2>
+      <form id="formCadastro" action="#" method="POST">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" />
+
+        <label>
+          <input type="checkbox" id="termos" name="termos" required /> Aceito os termos e condições.
+        </label>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section id="contato" class="section-info contato-final">
+      <h2>Contato Oficial</h2>
+      <p>
+        <strong>Site oficial:</strong>
+        <a href="https://timebrasiliavolei.com.br" target="_blank" rel="noopener">timebrasiliavolei.com.br</a>
+      </p>
+      <p>
+        <strong>Instagram:</strong>
+        <a href="https://instagram.com/brasiliavolei" target="_blank" rel="noopener">@brasiliavolei</a>
+      </p>
+      <p>
+        <strong>Contato da secretaria:</strong>
+        <a href="https://wa.me/5561986646834" target="_blank" rel="noopener">(61) 98664-6834 (WhatsApp)</a>
+      </p>
+      <p>
+        <strong>Informações sobre as escolas:</strong>
+        <a href="https://timebrasiliavolei.com.br/escolas-de-volei/" target="_blank" rel="noopener">timebrasiliavolei.com.br/escolas-de-volei/</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
